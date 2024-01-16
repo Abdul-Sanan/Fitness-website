@@ -1,6 +1,6 @@
 # Letter
 
-Asslamu alikum **Sanan bhai!**
+Asslamu alikum **All of You!**
 
 Kiya haal hai.
 
