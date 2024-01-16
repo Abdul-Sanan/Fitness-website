@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>complete responsive fitness and gym website design</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <script>
+        function name() {
+          
+        }
+        if(name ==''){
+            alert("please enter name")
+        }
+        
+        function login()
+            {
+                var name = document.getElementById("name").value;
+            var mob = document.getElementById("mob").value;
+             var about = document.getElementById("text").value;
+    var uname = document.getElementById("email").value;
+    var pwd = document.getElementById("pwd").value;
+     var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    if(name ==''){
+        alert("please enter name");
+    }
+    else if(uname =='')
+    {
+        alert("please enter email id");
+        
+    }
+    else if(!filter.test(uname))
+     {
+         alert("Enter valid email id.");
+     }
+     else if(pwd=='')
+     {
+        alert("enter the password");
+     }
+     
+     else if(pwd.length < 6 || pwd.length > 6)
+     {
+         alert("Password min and max length is 6.");
+     }
+     else if(mob=='')
+     {
+        alert("enter the mobile number");
+     }
+    else if(mob.length < 10 || mob.length > 10){
+        alert("please enter valid mobile number");
+    }
+    else if(about=='')
+     {
+        alert("write about your self");
+     }
+     else if(about.length < 10 ){
+        alert("please write about your self mininum 10 words");
+    }
+    
+     else
+    {
+    alert('Thank You for Login');
+    //Redirecting to other page or webste code or you can set your own html page.
+    window.location ="..//Fitness website/second page/2ndpage.html";
+    
+        }
+          }
+
+          
+         
+    function clearFunc()
+    {
+    document.getElementById("email").value="";
+    document.getElementById("pwd").value="";
+    document.getElementById("name").value="";
+    document.getElementById("mob").value="";
+    document.getElementById("text").value="";
+    }
+
+    function info(){
+        
+        alert("to get info login first");
+    
+    }
+    function sumbit()
+{
+    alert("submitted");
+    document.getElementById("text2").value="";
+};
+
+
+
+
+        </script>
+    
+</head>
+<body>
+    
+<!-- header section starts      -->
+
+<header class="header">
+
+    <img class="logo" src="images/gimnansiologo4.jpg" alt="A Problem">
+   
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#features">features</a>
+        <a href="#form">Join Us</a>
+        <a href="#trainers">trainers</a>
+        <a href="#blogs">blogs</a>
+    </nav>
+
+</header>
+
+<!-- header section ends     -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="swiper home-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide" style="background: url(images/home-bg-1.jpg) no-repeat;">
+                <div class="content">
+                    <span>be strong, be fit</span>
+                    <h3>Make yourself stronger than your excuses.</h3>
+                    <a href="#features" class="btn">get started</a>
+                </div>
+            </div>
+
+            <!-- <div class="swiper-slide slide" style="background: url(images/home-bg-2.jpg) no-repeat;">
+                <div class="content">
+                    <span>be strong, be fit</span>
+                    <h3>Make yourself stronger than your excuses.</h3>
+                    <a href="#" class="btn">get started</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide" style="background: url(images/home-bg-3.jpg) no-repeat;">
+                <div class="content">
+                    <span>be strong, be fit</span>
+                    <h3>Make yourself stronger than your excuses.</h3>
+                    <a href="#" class="btn">get started</a>
+                </div>
+            </div> -->
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+    </div>
+    
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <div class="image">
+        <img src="images/about-img.jpg" alt="">
+    </div>
+
+    <div class="content">
+        <span>about us</span>
+        <h3 class="title">Every day is a chance to become better</h3>
+        <p>IT'S not about PERFECT.it's about EFFORT.and when you bring that effort every SINGLE day.that's where TRANSFORMATION happens.that's how change occurs.</p>
+        <div class="box-container">
+            <div class="box">
+                <h3><i class="fas fa-check"></i>body and mind</h3>
+                <p>"Your BODY can stand almost anything.it's your MIND that you have to convince."</p>
+            </div>
+            <div class="box">
+                <h3><i class="fas fa-check"></i>healthy life</h3>
+                <p>"HEALTHY is an outfit that looks diffrent on everyday."</p>
+            </div>
+            <div class="box">
+                <h3><i class="fas fa-check"></i>strategies</h3>
+                <p>"Tactics without STRATEGY is the noise before defeat."</p>
+            </div>
+            <div class="box">
+                <h3><i class="fas fa-check"></i>workout</h3>
+                <p>"Sometimes a WORKOUT is all the therapy you need."</p>
+            </div>
+        </div>
+        <a href="https://www.totalfitness.co.uk/blog/inspiration/10-reasons-to-join-a-gym/" class="btn">read more</a>
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- features section starts  -->
+
+<section class="features" id="features">
+
+    <h1 class="heading"> <span>gym features</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="images/cardio2.jpg" alt="">
+            </div>
+            <div class="content">
+                <img src="images/icon-1.png" alt="">
+                <h3>Cardio</h3>
+                <p>get to know more information about cardio</p>
+                <a href="#form" class="btn" id="lform" onclick="info()">get info</a>
+            </div>
+        </div>
+
+        <div class="box second">
+            <div class="image">
+                <img src="images/upper-body.jpg" alt="">
+            </div>
+            <div class="content">
+                <img src="images/icon-2.png" alt="">
+                <h3>Upper body</h3>
+                <p>to build your upper body click below</p>
+                <a href="#form" class="btn" id="lform" onclick="info()">get info</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/lower-body.jpg" alt="">
+            </div>
+            <div class="content">
+                <img src="images/icon-3.png" alt="">
+                <h3>Lower body</h3>
+                <p>to build lower body click below</p>
+                <a href="#form" class="btn" id="lform" onclick="info()">get info</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- features section ends -->
+
+<!-- pricing/form section starts  -->
+
+<section class="form" id="form">
+    <h1 class="heading"><span>Join Us</span></h1>
+    
+    <div id="formbg">
+        <form action="/Users/gokuu/Desktop/Fitness website/second page/2ndpage.html"></form>
+         <div id="form2">
+            <input type="text" name="" placeholder="enter name" id="name" ><br><br>
+            <input type="text" name="" placeholder="enter email" id="email"><br><br>
+            <input type="password" placeholder="enter password" id="pwd"><br><br>
+            <input type="number" name="" placeholder="enter mob number" id="mob"> <br><br>
+            <input type="date" name="date"  id="date"><br><br>
+           
+           <b>gender: male:</b> <input type="radio"  name ="gender" id="gender">
+           <b> female:</b><input type="radio"  name ="gender" id="gender">
+           <b>  Others:</b><input type="radio"  name ="gender"  id="gender"><br><br>
+            <textarea placeholder="      write about your self" id="text" cols="30" rows="10"></textarea>
+            <br><br>
+            <input type="submit" value="login" id="login" onclick="login()">
+            <input type="submit" value="reset" id="reset" onclick="clearFunc()">
+        </div>     
+    </div>
+<!-- 
+    <div class="information">
+        <span>pricing plan</span>
+        <h3>affordable pricing plan for your</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolore excepturi ea suscipit fugiat cum quae, rerum optio mollitia! Tempora?</p>
+        <p> <i class="fas fa-check"></i> cardio exercise </p>
+        <p> <i class="fas fa-check"></i> weight lifting </p>
+        <p> <i class="fas fa-check"></i> diet plans </p>
+        <p> <i class="fas fa-check"></i> overall results </p>
+        <a href="#" class="btn">all pricing</a>
+    </div>
+
+    <div class="plan basic">
+        <h3>basic plan</h3>
+        <div class="price"><span>$</span>30<span>/mo</span></div>
+       <div class="list">
+        <p> <i class="fas fa-check"></i> personal training </p>
+        <p> <i class="fas fa-check"></i> cardio exercise </p>
+        <p> <i class="fas fa-check"></i> weight lifting </p>
+        <p> <i class="fas fa-check"></i> diet plans </p>
+        <p> <i class="fas fa-check"></i> overall results </p>
+       </div>
+       <a href="#" class="btn">get started</a>
+    </div>
+
+    <div class="plan">
+        <h3>premium plan</h3>
+        <div class="price"><span>$</span>90<span>/mo</span></div>
+       <div class="list">
+        <p> <i class="fas fa-check"></i> personal training </p>
+        <p> <i class="fas fa-check"></i> cardio exercise </p>
+        <p> <i class="fas fa-check"></i> weight lifting </p>
+        <p> <i class="fas fa-check"></i> diet plans </p>
+        <p> <i class="fas fa-check"></i> overall results </p>
+       </div>
+       <a href="#" class="btn">get started</a>
+    </div> -->
+
+</section>
+
+<!-- pricing/form section ends -->
+
+<!-- trainers section starts  -->
+
+<section class="trainers" id="trainers">
+
+    <h1 class="heading"> <span>expert trainers</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/theRock.jpg" alt="">
+            <div class="content">
+                <span>expert trainer</span>
+                <h3>zaid</h3>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-pinterest"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/hemsworth.jpg" alt="">
+            <div class="content">
+                <span>expert trainer</span>
+                <h3>khizar </h3>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-pinterest"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/jackman.jpg" alt="">
+            <div class="content">
+                <span>expert trainer</span>
+                <h3>afraz</h3>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-pinterest"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/tripleH.jpg" alt="">
+            <div class="content">
+                <span>expert trainer</span>
+                <h3>sanan</h3>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-pinterest"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- trainers section ends -->
+
+<!-- banner section starts  -->
+
+<section class="banner">
+
+    <span>join us now</span>
+    <h3>get your physique strong</h3>
+    <p>we want you to get healthy and fit so we are providing free of cost information </p>
+    <a href="#footer" class="btn">contact us</a>
+
+</section>
+
+<!-- banner section ends -->
+
+<!-- review section starts  -->
+
+<section class="review">
+
+    <div class="information">
+        <span>testimonials</span>
+        <h3>what people says about us</h3>
+        <p>look what other poeple say about our work.feel fre to give your opinoin and suggetions. we are thankfull for your review</p>
+        <a href="#footer" class="btn">comment us</a>
+    </div>
+
+    <div class="swiper review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <p>yes your work of providing free info about health and fitness is very helpfull.</p>
+                <div class="user">
+                    <img src="images/saadRoshan.jpg" alt="">
+                    <div class="info">
+                        <h3>mohd. saad</h3>
+                        <span>web developer</span>
+                    </div>
+                    <i class="fas fa-quote-left"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <p>i appreciate your hard work for giving info about health </p>
+                <div class="user">
+                    <img src="images/faizanAbbas.jpg" alt="">
+                    <div class="info">
+                        <h3>faizan basrawi</h3>
+                        <span>software developer</span>
+                    </div>
+                    <i class="fas fa-quote-left"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <p> DIVERSE GROUP CLASSES; PEOPLE ARE NICE TO ONE ANOTHER LIKE IN A FRIENDLY COMMUNITY</p>
+                <div class="user">
+                    <img src="images/pic-3.png" alt="">
+                    <div class="info">
+                        <h3>saif hanfi</h3>
+                        <span>vfx artist</span>
+                    </div>
+                    <i class="fas fa-quote-left"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <p>YOU HAVE EVERYTHING ONE COULD WANT IN A GYM as well as GREAT DESIGN, GREAT DEVELOPERS</p>
+                <div class="user">
+                    <img src="images/atifHashmi.jpg" alt="">
+                    <div class="info">
+                        <h3>atif khan</h3>
+                        <span>AI & ML expert</span>
+                    </div>
+                    <i class="fas fa-quote-left"></i>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- review section ends -->
+
+<!-- blogs section starts  -->
+
+<section class="blogs" id="blogs">
+
+    <h1 class="heading"> <span>daily posts</span> </h1>
+
+    <div class="swiper blogs-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/blog-1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="link"> <a href="">by user</a> <span>|</span> <a href="">21st may, 2021</a> </div>
+                    <h3>fitness is not about being better than someone else</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, tenetur?</p>
+                    <a href="" class="btn">read more</a>
+                </div>
+            </div>
+            
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/blog-2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="link"> <a href="">by user</a> <span>|</span> <a href="">21st may, 2021</a> </div>
+                    <h3>fitness is not about being better than someone else</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, tenetur?</p>
+                    <a href="" class="btn">read more</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/blog-3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="link"> <a href="">by user</a> <span>|</span> <a href="">21st may, 2021</a> </div>
+                    <h3>fitness is not about being better than someone else</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, tenetur?</p>
+                    <a href="" class="btn">read more</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/blog-4.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="link"> <a href="">by user</a> <span>|</span> <a href="#">21st may, 2021</a> </div>
+                    <h3>fitness is not about being better than someone else</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, tenetur?</p>
+                    <a href="" class="btn">read more</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/blog-5.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="link"> <a href="#">by user</a> <span>|</span> <a href="#">21st may, 2021</a> </div>
+                    <h3>fitness is not about being better than someone else</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, tenetur?</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+    </div>
+
+</section>
+
+<!-- blogs section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer" id="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a class="links" href="#home">home</a>
+            <a class="links" href="#about">about</a>
+            <a class="links" href="#features">features</a>
+            <a class="links" href="#pricing">join us</a>
+            <a class="links" href="#trainers">trainers</a>
+            <a class="links" href="#blogs">blogs</a>
+        </div>
+
+        <div class="box">
+            <h3 style="padding-left:22px ;">write a comment</h3>
+            <textarea id="text2" style="margin-bottom:10px; background-color:black; border:1px solid rgb(28,212,44); border-radius: 12px; padding: 10px;" name="myComments" cols="30" rows="10" ></textarea>
+            <input type="submit" value="submit" id="sumbit" onclick="sumbit()">
+        </div>
+
+        <div class="box">
+            <h3>reach us</h3>
+            <p> <i class="fas fa-phone"></i> +123-456-7890 </p>
+            <p> <i class="fas fa-phone"></i> +111-222-3333 </p>
+            <p> <i class="fas fa-envelope"></i> zaidians@gmail.com </p>
+            <p> <i class="fas fa-map"></i> Aurangabad The City of Gates, india - 400104 </p>
+            <div class="share">
+                <a href="https://www.facebook.com/afraz.stark" class="fab fa-facebook-f"></a>
+                <a href="https://twitter.com/szaid6959" class="fab fa-twitter"></a>
+                <a href="https://in.linkedin.com/in/kmdkhizar-9b61b7223" class="fab fa-linkedin"></a>
+                <a href="https://www.instagram.com/kmdkhizar/?hl=en" class="fab fa-instagram"></a>
+            </div>
+        </div>
+
+        
+    </div>
+
+</section>
+
+<div class="credit"> created by <span>A.K.Z. Club </span> | all rights reserved! </div>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
